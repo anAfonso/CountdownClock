@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <link rel="icon" type="image/png" href="img/icon.png">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>Countdown Clock</title>
+      
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+      <link rel="stylesheet" href="css/styles.css">
+
+    </head>
+
+    <body>
+
+    <div class="container">
+      <div class="main">
+        <div>
+          <h2>Countdown Clock</h2>
+          <p class='message'>This timer will finish at<span id="willFinish"></span></p>
+        </div>
+          
+          <div>
+            <canvas id="circle" width="360" height="360"></canvas>
+          </div>
+          
+          <div class='row'>
+            <div class="text-center">
+             <div><p>Set Minutes:</p></div>
+             <br>
+             <div>
+              <button class="subtract" id="minus">-</button>
+              &nbsp;
+              <span class="session" id="sessionTime"> 0 </span>
+              &nbsp;
+              <button class="add" id="plus">+</button>
+          </div>
+         
+              
+          <div class="btns">
+            <button class="btn" id="fivemin">5 min</button>
+            &nbsp;
+            <button class="btn" id="tenmin">10 min</button>
+            &nbsp;
+            <button class="btn" id="thirtymin">30 min</button>
+          </div>
+          
+          <div class="buttons">
+            <button id="reset">Reset</button>
+            &nbsp;
+            <button id="playStop">Start</button>
+          </div>
+      <div> <!-- main-->
+
+      <div id="finishMsg" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h1>Time is up!</h1>
+            </div>
+            <div class="modal-body">
+             <h2>What do you want to do next?</h2>
+            <div>
+             <button class="modal-btn" id="closeApp">Close app</a></button>
+             &nbsp;
+              <button class="modal-btn" id="newTimer">Set another timer</button>
+            
+            </div>
+            </div>
+          </div>
+
+    </div> <!-- container -->
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
